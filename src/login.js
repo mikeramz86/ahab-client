@@ -10,8 +10,9 @@ class LoginPage extends Component {
       error: ""
     }
 
+    this.handleSubmit = this.handleSubmit.bind(this)
     this.handlePassChange = this.handlePassChange.bind(this)
-    // this.handUserChange = this.handleUserChange.bind(this)
+    this.handleUserChange = this.handleUserChange.bind(this)
     this.dismissError = this.dismissError.bind(this)
   }
 
