@@ -1,5 +1,10 @@
 import React, { Component } from "react"
-import "./login.css"
+import "./LoginPage.css"
+import PropTypes from 'prop-types'
+
+const Flash = ({ message }) =>
+  <div className="flash">{ message }</div>
+
 
 class LoginPage extends Component {
   constructor() {
@@ -46,9 +51,15 @@ class LoginPage extends Component {
   }
 
   render() {
+    const { error } = this.props
+    const { message, type } = error
+
     return (
       <div className="login-form">
         <legend>Log In</legend>
+
+        { message && type === 'loginError' && <Flash message={message}/> }
+
         <form onSubmit={this.handleSubmit}>
           <fieldset>
             {this.state.error && (
@@ -56,11 +67,11 @@ class LoginPage extends Component {
                 <button onClick={this.dismissError}>✖</button>
                 {this.state.error}
               </h3>
-            )}
+            )}            
             <label>User Name</label>
             <input
               type="text"
-              data-test="username"
+              data-test="userame"
               value={this.state.username}
               onChange={this.handleUserChange}
             />
@@ -79,6 +90,13 @@ class LoginPage extends Component {
       </div>
     )
   }
+}
+LoginPage.propTypes = {
+  error: PropTypes.object.isRequired
+}
+
+LoginPage.defaulProps = {
+  error: {}
 }
 
 export default LoginPage

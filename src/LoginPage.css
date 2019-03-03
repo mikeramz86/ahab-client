@@ -1,29 +1,19 @@
-/* body {
-    padding: 60px 0 0;
-    margin: 0;
-    font-size: 18px;
-  } */
-  
-  body * {
-    box-sizing: border-box;
-  }
-  
-  fieldset {
+/* fieldset {
     padding: 0;
     border: 0;
     margin: 0;
-  }
+  } */
   
   .logo {
     display: block;
     width: auto;
-    height: 35px;
-    margin: 0 auto 30px;
+    height: 2rem;
+    margin: 0 auto 1rem;
   }
   
   .login-form {
-    width: 400px;
-    padding: 40px;
+    width: 25rem;
+    padding: 1.4rem;
     border-radius: 3px;
     background: white;
     margin: 0 auto;
@@ -31,13 +21,13 @@
   
   .login-form legend {
     width: 100%;
-    line-height: 38px;
-    font-size: 35px;
+    line-height: 2rem;
+    font-size: 2rem;
     font-weight: 300;
     color: #565656;
     text-align: center;
     letter-spacing: 0;
-    margin: 0 auto 45px;
+    margin: 0 auto 3rem;
   }
 
   input[type="text"],
@@ -46,19 +36,19 @@
     display: block;
     width: 100%;
     height: auto;
-    font-size: 18px;
+    font-size: 1rem;
     text-align: left;
-    padding: 15px;
+    padding: 1rem;
     border: 2px solid #e7e7e7;
     border-radius: 3px;
     background: #fcfcfc;
-    margin: 10px auto 20px;
+    margin: 10px auto 2rem;
     transition: opacity 0.4s;
   }
   
   input[type="submit"] {
     height: auto;
-    font-size: 22px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: center;
     color: white;
