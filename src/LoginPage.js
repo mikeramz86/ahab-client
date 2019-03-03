@@ -95,7 +95,7 @@ LoginPage.propTypes = {
   error: PropTypes.object.isRequired
 }
 
-LoginPage.defaulProps = {
+LoginPage.defaultProps = {
   error: {}
 }
 
