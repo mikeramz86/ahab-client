@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 const Flash = ({ message }) =>
   <div className="flash">{ message }</div>
 
-
 class LoginPage extends Component {
   constructor() {
     super()
@@ -59,7 +58,6 @@ class LoginPage extends Component {
         <legend>Log In</legend>
 
         { message && type === 'loginError' && <Flash message={message}/> }
-
         <form onSubmit={this.handleSubmit}>
           <fieldset>
             {this.state.error && (

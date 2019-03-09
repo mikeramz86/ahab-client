@@ -1,0 +1,9 @@
+h3 {
+    font-size: 2em;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    padding: 1rem;
+    border-left: 10px solid #0E59B2;
+    border-radius: 2.5px;
+    background-color: lightblue;
+}
