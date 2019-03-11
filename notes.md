@@ -2,32 +2,38 @@
 
 1. create symple prop type
 
-Reasonable defaults: when you have a language that doesn't do strict types
+_Reasonable defaults: when you have a language that doesn't do strict types_
 
+```javascript
 LoginPage.propTypes = {
     error: PropTypes.object.isRequired
 }
+```
 
-next set up a default prop using the proptypes syntax which will put in a blank object
+_next set up a default prop using the proptypes syntax which will put in a blank object_
 
-now see if you can s see an error
+_now see if you can s see an error_
+
+```javascript
 const flash = ( {message, type }) => 
 <div className="flash">{message}</div>
+```
 
-We now want to respon to something: 
+_We now want to respond to something:_
 
+```javascript
 in render()
 
 const {error }
 cosnt {message } = error
 
 console.log()
+```
 
 
 # Notes
 1. make sure your files are named after the components
-...1. 
 1. always push with padding and not margin PADDING ALL THE TIME!!!!
 1. Duck typing
-1. If 
-1.
+
+___
