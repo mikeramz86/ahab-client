@@ -65,11 +65,11 @@ class LoginPage extends Component {
                 <button onClick={this.dismissError}>✖</button>
                 {this.state.error}
               </h3>
-            )}            
+            )}     
             <label>User Name</label>
             <input
               type="text"
-              data-test="userame"
+              data-test="username"
               value={this.state.username}
               onChange={this.handleUserChange}
             />
