@@ -16,4 +16,4 @@ Greeting.defaultProps = {
   name: ""
 };
 
-export default Greeting;
+export default Greeting
