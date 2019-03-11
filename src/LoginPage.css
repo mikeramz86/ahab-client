@@ -1,60 +1,54 @@
-/* fieldset {
-    padding: 0;
-    border: 0;
-    margin: 0;
-  } */
-  
-  .logo {
-    display: block;
-    width: auto;
-    height: 2rem;
-    margin: 0 auto 1rem;
-  }
-  
-  .login-form {
-    width: 25rem;
-    padding: 1.4rem;
-    border-radius: 3px;
-    background: white;
-    margin: 0 auto;
-  }
-  
-  .login-form legend {
-    width: 100%;
-    line-height: 2rem;
-    font-size: 2rem;
-    font-weight: 300;
-    color: #565656;
-    text-align: center;
-    letter-spacing: 0;
-    margin: 0 auto 3rem;
-  }
 
-  input[type="text"],
-  input[type="password"],
-  input[type="submit"] {
-    display: block;
-    width: 100%;
-    height: auto;
-    font-size: 1rem;
-    text-align: left;
-    padding: 1rem;
-    border: 2px solid #e7e7e7;
-    border-radius: 3px;
-    background: #fcfcfc;
-    margin: 10px auto 2rem;
-    transition: opacity 0.4s;
-  }
-  
-  input[type="submit"] {
-    height: auto;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-    color: white;
-    background: #0E59B2;
-    border: 0;
-    cursor: pointer;
-    margin-bottom: 0;
-    
-  }
+.logo {
+  display: block;
+  width: auto;
+  height: 2rem;
+  margin: 0 auto 1rem;
+}
+
+.login-form {
+  width: 25rem;
+  padding: 1.4rem;
+  border-radius: 3px;
+  background: white;
+  margin: 0 auto;
+}
+
+.login-form legend {
+  width: 100%;
+  line-height: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #565656;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0 auto 3rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  text-align: left;
+  padding: 1rem;
+  border: 2px solid #e7e7e7;
+  border-radius: 3px;
+  background: #fcfcfc;
+  margin: 10px auto 1rem;
+  transition: opacity 0.4s;
+}
+
+input[type="submit"] {
+  height: auto;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  background: #0E59B2;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 0;
+}
