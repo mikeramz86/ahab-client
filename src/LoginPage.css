@@ -1,5 +1,6 @@
 
 .logo {
+  font-size: 1.6rem;
   display: block;
   width: auto;
   height: 2rem;
@@ -7,6 +8,7 @@
 }
 
 .login-form {
+  font-size: 1.6rem;
   width: 25rem;
   padding: 1.4rem;
   border-radius: 3px;
@@ -17,12 +19,16 @@
 .login-form legend {
   width: 100%;
   line-height: 2rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 300;
   color: #565656;
   text-align: center;
   letter-spacing: 0;
   margin: 0 auto 3rem;
+}
+
+label {
+  font-size: 1.6rem;
 }
 
 input[type="text"],
@@ -31,7 +37,7 @@ input[type="submit"] {
   display: block;
   width: 100%;
   height: auto;
-  font-size: 1rem;
+  font-size: 1.6rem;
   text-align: left;
   padding: 1rem;
   border: 2px solid #e7e7e7;
@@ -43,7 +49,7 @@ input[type="submit"] {
 
 input[type="submit"] {
   height: auto;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 500;
   text-align: center;
   color: white;

@@ -10,10 +10,10 @@ class Greeting extends Component {
 
 Greeting.propTypes = {
   name: PropTypes.string
-};
+}
 
 Greeting.defaultProps = {
   name: ""
-};
+}
 
 export default Greeting
