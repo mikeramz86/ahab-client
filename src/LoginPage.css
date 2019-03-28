@@ -58,3 +58,13 @@ input[type="submit"] {
   cursor: pointer;
   margin-bottom: 0;
 }
+
+.flash {
+  font-size: 1.6rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  padding: 1rem;
+  border-left: 10px solid rgb(178, 20, 14);
+  border-radius: 2px;
+  background-color: rgb(240, 128, 128, 0.1);
+}

@@ -57,7 +57,7 @@ class LoginPage extends Component {
       <div className="login-form">
         <legend>Log In</legend>
 
-        { message && type === 'loginError' && <Flash message={message}/> }
+        { message && type === 'loginError' && <Flash message={message} /> }
         <form onSubmit={this.handleSubmit}>
           <fieldset>
             {this.state.error && (
