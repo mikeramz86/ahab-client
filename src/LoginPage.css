@@ -61,6 +61,7 @@ input[type="submit"] {
 
 .flash {
   font-size: 1.6rem;
+  margin-top: 1.25rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
   padding: 1rem;
@@ -68,3 +69,8 @@ input[type="submit"] {
   border-radius: 2px;
   background-color: rgb(240, 128, 128, 0.1);
 }
+
+button {
+  margin-right: 1rem;
+}
+

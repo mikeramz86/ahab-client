@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './App.css'
 import LoginPage from "./LoginPage"
-// import Greeting from "./Greeting"
+import Greeting from "./Greeting"
 
 const name = 'michael and evilSoft'
 const error = {
-  message: 'wrong user name',
+  message: 'log in error',
   type: 'loginError'
 }
 
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <LoginPage error={error}/>
-        {/* <Greeting name={name} /> */}
+        <Greeting name={name} />
       </div>
     )
   }
