@@ -3,7 +3,7 @@ import "./LoginPage.css"
 import PropTypes from 'prop-types'
 
 const Flash = ({ message }) =>
-  <div className="flash">{ message }</div>
+  <div className="flash">{message}</div>
 
 class LoginPage extends Component {
   constructor() {
@@ -54,37 +54,44 @@ class LoginPage extends Component {
     const { message, type } = error
 
     return (
-      <div className="login-form">
-        <legend>Log In</legend>
 
-        { message && type === 'loginError' && <Flash message={message}/> }
-        <form onSubmit={this.handleSubmit}>
-          <fieldset>
-            {this.state.error && (
-              <h3 data-test="error" onClick={this.dismissError}>
-                <button onClick={this.dismissError}>✖</button>
-                {this.state.error}
-              </h3>
-            )}     
-            <label>User Name</label>
-            <input
-              type="text"
-              data-test="username"
-              value={this.state.username}
-              onChange={this.handleUserChange}
-            />
+      <div>
+        {message && type === 'loginError' && <Flash message={message} />}
 
-            <label>Password</label>
-            <input
-              type="password"
-              data-test="password"
-              value={this.state.password}
-              onChange={this.handlePassChange}
-            />
+        {this.state.error && (
+          <div className="flash" data-test="error">
+            <button onClick={this.dismissError}>✖</button>
+            {this.state.error}
+          </div>
+        )}
 
-            <input type="submit" value="Log In" data-test="submit" />
-          </fieldset>
-        </form>
+        <div className="login-form">
+
+          <legend>Log In</legend>
+
+          <form onSubmit={this.handleSubmit}>
+            <fieldset>
+
+              <label>User Name</label>
+              <input
+                type="text"
+                data-test="username"
+                value={this.state.username}
+                onChange={this.handleUserChange}
+              />
+
+              <label>Password</label>
+              <input
+                type="password"
+                data-test="password"
+                value={this.state.password}
+                onChange={this.handlePassChange}
+              />
+
+              <input type="submit" value="Log In" data-test="submit" />
+            </fieldset>
+          </form>
+        </div>
       </div>
     )
   }
