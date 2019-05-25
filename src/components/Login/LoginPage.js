@@ -1,9 +1,12 @@
-import React, { Component } from "react"
-import "./LoginPage.css"
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-const Flash = ({ message }) =>
-  <div className="flash">{message}</div>
+import './LoginPage.css'
+
+import Button from '../common/Button'
+import Flash from '../common/Flash'
+
+const name = 'michael and evilSoft'
 
 class LoginPage extends Component {
   constructor() {
@@ -17,12 +20,10 @@ class LoginPage extends Component {
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handlePassChange = this.handlePassChange.bind(this)
     this.handleUserChange = this.handleUserChange.bind(this)
-    this.dismissError = this.dismissError.bind(this)
   }
 
-  dismissError() {
+  dismissError = () =>
     this.setState({ error: "" })
-  }
 
   handleSubmit(evt) {
     evt.preventDefault()
@@ -54,24 +55,21 @@ class LoginPage extends Component {
     const { message, type } = error
 
     return (
-
-      <div>
+      <div className="LoginPage">
         {message && type === 'loginError' && <Flash message={message} />}
 
         {this.state.error && (
-          <div className="flash" data-test="error">
-            <button onClick={this.dismissError}>✖</button>
+          <div className="flash">
+            <Button onClick={this.dismissError} text="✖" />
             {this.state.error}
           </div>
         )}
 
         <div className="login-form">
-
           <legend>Log In</legend>
 
           <form onSubmit={this.handleSubmit}>
             <fieldset>
-
               <label>User Name</label>
               <input
                 type="text"
@@ -87,11 +85,11 @@ class LoginPage extends Component {
                 value={this.state.password}
                 onChange={this.handlePassChange}
               />
-
-              <input type="submit" value="Log In" data-test="submit" />
+              <Button type="submit" text="Log In" />
             </fieldset>
           </form>
         </div>
+        <Flash message={name} type="info" />
       </div>
     )
   }
