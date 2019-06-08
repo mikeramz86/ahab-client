@@ -1,0 +1,45 @@
+.LoginPage {
+  width: 45rem;
+  margin: 0 auto;
+}
+
+.login-form {
+  font-size: 1.6rem;
+  border-radius: 3px;
+  padding: 1.4rem;
+}
+
+.login-form legend {
+  width: 100%;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #565656;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0 auto 3rem;
+}
+
+label {
+  font-size: 1.6rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 1.6rem;
+  text-align: left;
+  padding: 1rem;
+  border: 2px solid #e7e7e7;
+  border-radius: 3px;
+  background: #fcfcfc;
+  margin: 10px auto 1rem;
+  transition: opacity 0.4s;
+}
+
+button {
+  margin-right: 1rem;
+}
+
